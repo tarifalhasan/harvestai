@@ -9,7 +9,7 @@ const CoreValuesSection = () => {
         <div>
           <div className="mb-10 text-center lg:mb-12 xl:mb-20">
             <div className="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[745px] lg:text-[80px] font-bold lg:leading-[80px] font-secondary text-[36px] leading-10">
-              <h2 className="text-white">The core values behind our work</h2>
+              <h2 className="text-white">Core Values Behind Our Work</h2>
             </div>
           </div>
           <div className="mb-6 h-[4px] w-full rounded bg-[#1b1b1b] sm:mb-0"></div>

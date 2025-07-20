@@ -25,7 +25,7 @@ const Card = ({
   return (
     <div
       ref={container}
-      className="h-screen flex items-center justify-center sticky top-0"
+      className="h-screen flex items-center justify-center sticky top-0 overflow-x-clip"
     >
       <motion.div
         style={{
@@ -64,11 +64,11 @@ const Card = ({
             </span>
           </div>
           <div className="relative w-[60%] h-full rounded-[25px] overflow-hidden">
-            <motion.div className="w-full h-full" style={{ scale: imageScale }}>
+            <motion.div className="lg:w-full lg:h-full h-50 w-50 object-cover" style={{ scale: imageScale }}>
               <img
                 src={`${src}`}
                 alt="image"
-                className="object-cover absolute inset-0 w-full h-full"
+                className="object-cover absolute inset-0 lg:w-full lg:h-full w-50 h-60"
               />
             </motion.div>
           </div>

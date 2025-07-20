@@ -1,5 +1,4 @@
 import MaxWidthWrapper from "../shared/MaxWidthWrapper";
-import Logo from "../../assets/icons/Logo.png";
 import { Menus } from "../../utils/constants";
 import DesktopMenu from "../shared/DesktopMenu";
 import MobMenu from "../shared/MobMenu";
@@ -22,10 +21,10 @@ const Navbar = () => {
       <MaxWidthWrapper className="px-10">
         <div className="flex justify-between items-center">
           <Link to="/">
-            <img src={Logo} alt="logo" width={96} height={24} />
+            <img src={"/icons/logo.png"} alt="Harvest ai" className="md:h-20 w-auto h-12"  />
           </Link>
 
-          <ul className="lg:flex items-center hidden gap-4">
+          <ul className="lg:flex items-center hidden gap-4 lg:gap-1">
             {Menus.map((menu) => (
               <DesktopMenu menu={menu} key={menu.name} />
             ))}

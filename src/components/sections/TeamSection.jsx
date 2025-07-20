@@ -14,11 +14,11 @@ const TeamSection = () => {
             <div className="mb-10 flex flex-wrap items-center justify-between lg:mb-12 xl:mb-20">
               <div className="max-w-sm lg:max-w-3xl xl:max-w-[715px]">
                 <h2 className="text-[40px] leading-[40px] font-bold tracking-tight font-secondary lg:text-[80px] lg:leading-[80px] lg:tracking-normal">
-                 A team of creative minds and experts drives our vision.  Join our telegram 
+     A team of creative minds and experts drives our vision.  Join our telegram 
 
                 </h2>
               </div>
-              <Link to={""} className="mt-5 hover:text-white" href="/team">
+              <Link to={"/contact"} className="mt-5 hover:text-white" href="/team">
                 <Button className="bg-black text-white font-bold font-primary py-4">
                   Join our team
                 </Button>

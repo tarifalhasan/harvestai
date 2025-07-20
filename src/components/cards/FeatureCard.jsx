@@ -24,7 +24,7 @@ const FeatureCard = ({ feature }) => {
         </div>
 
         {/* Arrow Icon */}
-        <Link to="/servicedetails">
+        <Link to="/about">
           <div className="mt-10">
             <GoArrowRight className="group-hover:text-blue" size={32} />
           </div>

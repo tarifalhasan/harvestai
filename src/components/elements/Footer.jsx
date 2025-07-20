@@ -1,11 +1,10 @@
 import logo from "../../assets/icons/Logo.png";
-import arrowRight from "../../assets/icons/arrowwhite.svg";
+
 import MaxWidthWrapper from "../shared/MaxWidthWrapper";
 import FooterTop from "./FooterTop";
-import { footerPrimaryPages } from "../../utils/constants";
+import { footerPrimaryPages, involvedPages, LegalPages, ResourcesPages } from "../../utils/constants";
 import { footerUtilitiesPages } from "../../utils/constants";
-import { footerLegalPages } from "../../utils/constants";
-import { footerGetInvolvedPages } from "../../utils/constants";
+
 
 
 
@@ -24,10 +23,11 @@ const Footer = () => {
             {/* Logo & Description */}
             <div className="flex flex-col gap-y-6">
               <a href="/" className="inline-block">
-                <img src={logo} alt="logo" width={96} height={24} />
+
+            <img src={"/icons/logo.png"} alt="Harvest ai" className="md:h-20 w-auto h-12 md:-ml-5 -mt-4"  />
               </a>
               <p className="text-lg font-primary">
-               At Harvest AI, we are building a future where every voice is valued, every action is rewarded, and every user owns their digital identity.
+             At Harvest AI, we are building a future where every voice is valued, every action is rewarded, and every user owns their digital identity.
 
               </p>
               {/* <p className="text-lg font-primary">
@@ -73,13 +73,13 @@ const Footer = () => {
               </ul>
             </div>
 
-              {/* legal  */}
+              {/* Resources   */}
              <div className="flex flex-col gap-y-6">
               <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
-                Legal  
+                Resources 
               </h4>
               <ul className="flex flex-col gap-y-[10px] capitalize">
-                {footerLegalPages.map((item, i) => (
+                {ResourcesPages.map((item, i) => (
                   <li key={i}>
                     <a
                       href={item.path}
@@ -94,13 +94,13 @@ const Footer = () => {
 
 
 
-              {/* Get Involved   */}
+              {/* legal   */}
              <div className="flex flex-col gap-y-6">
               <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
-                Get Involved   
+                Legal    
               </h4>
               <ul className="flex flex-col gap-y-[10px] capitalize">
-                {footerGetInvolvedPages.map((item, i) => (
+                {LegalPages.map((item, i) => (
                   <li key={i}>
                     <a
                       href={item.path}
@@ -113,7 +113,23 @@ const Footer = () => {
               </ul>
             </div>
 
-            
+              <div className="flex flex-col gap-y-6">
+              <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
+                Get Involved
+              </h4>
+              <ul className="flex flex-col gap-y-[10px] capitalize">
+                {involvedPages.map((item, i) => (
+                  <li key={i}>
+                    <a
+                      href={item.path}
+                      className="transition-all duration-300 ease-linear hover:text-[#298DED] text-lg font-primary"
+                    >
+                      {item.page}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="h-[1px] w-full bg-[#DBD6CF]"></div>

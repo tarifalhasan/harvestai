@@ -1,5 +1,4 @@
-import AboutImageOne from "../../assets/images/abouthero.jpg";
-import AboutImageTwo from "../../assets/images/aboutheroimage2.webp";
+
 import { Link } from "react-router-dom";
 import Button from "../shared/Button";
 import MaxWidthWrapper from "../shared/MaxWidthWrapper";
@@ -18,8 +17,8 @@ const AboutClientSection = () => {
 
       <AnimatonVariants animation="zoom" delay={0.5}>
         <img
-          src={AboutImageOne}
-          alt=""
+          src={"/imgs/tailes/21.png"}
+          alt="banner"
           className="mt-10 lg:mt-15 rounded-xl sm:rounded-2xl"
         />
       </AnimatonVariants>
@@ -51,13 +50,12 @@ const AboutClientSection = () => {
         <AnimatonVariants animation="fade-left" delay={0.5} duration={0.7}>
           <div>
             <h2 className="text-[36px] leading-10 font-bold font-secondary tracking-tight lg:text-[80px] lg:leading-[80px] lg:tracking-normal">
-              Delivering the best solutions with AI
+              Redefining Digital Expression and Value
             </h2>
 
             <p className="text-primary font-primary text-lg mt-5">
-             Harvest AI introduces a next-generation social platform that prioritizes freedom, privacy, and fairness. 
-             <p>Built on blockchain and powered by AI, it enables individuals to share, connect, and earn—without relying on centralized systems or giving up control.
-</p>
+             Harvest AI introduces a next-generation social platform that prioritizes freedom, privacy, and fairness. Built on blockchain and powered by AI, it enables individuals to share, connect, and earn—without relying on centralized systems or giving up control.
+           
             </p>
 
            
@@ -74,9 +72,9 @@ const AboutClientSection = () => {
 
         <AnimatonVariants animation="fade-right" delay={0.5} duration={0.7}>
           <img
-            src={AboutImageTwo}
+         src={"/imgs/tailes/35.png"}
             alt=""
-            className="lg:w-[1000px] rounded-xl mt-10 sm:w-[344px] "
+            className="lg:w-[1000px] rounded-xl mt-10 sm:w-[344px] lg:h-[300px] "
           />
         </AnimatonVariants>
       </div>

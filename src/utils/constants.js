@@ -62,122 +62,59 @@ import Member6 from "../assets/images/team-member-img-6.jpg";
 import UmbrellaLogo from "../assets/images/umbrella.webp";
 
 export const Menus = [
+
   {
-    name: "Home",
-    path: "/",
-  },
-  {
-    name: "About",
-    path: "/about",
-  },
-  {
-    name: "Services",
+    name: "Ecosystem",
     subMenu: [
       {
-        name: "Services",
-        path: "/services",
+        name: "Harvest chain",
+        path: "/",
       },
       {
-        name: "Service Details",
-        path: "/servicedetails",
+        name: "Bridge",
+        path: "/",
+      },
+         {
+        name: "Defi",
+        path: "/",
+      },
+          {
+        name: "Harvest Hub",
+        path: "/",
       },
     ],
     gridCols: 1,
   },
   {
-    name: "Pages",
+    name: "Docs",
     subMenu: [
       {
-        name: "Blogs",
-        path: "/blogs",
-        subMenu: [
-          {
-            name: "Blog",
-            path: "/blogs",
-          },
-          {
-            name: "Blog Details",
-            path: "/blog/blog1",
-          },
-        ],
-      },
-      {
-        name: "Team",
+        name: "Whitepaper",
         path: "/",
-        subMenu: [
-          {
-            name: "Team",
-            path: "/",
-          },
-          {
-            name: "Team Details",
-            path: "/",
-          },
-        ],
-      },
-      {
-        name: "FAQ",
-        path: "/faq",
-        subMenu: [
-          {
-            name: "FAQ-1",
-            path: "/faq-1",
-          },
-          {
-            name: "FAQ-2",
-            path: "/faq-2",
-          },
-        ],
-      },
-      {
-        name: "Portfolio",
-        path: "/portfolio",
-        subMenu: [
-          {
-            name: "Portfolio",
-            path: "/portfolio",
-          },
-          {
-            name: "Portfolio Details",
-            path: "/portfolio/nlp-model",
-          },
-        ],
-      },
-
-      {
-        name: "Pricing",
-        path: "/pricing",
-      },
-      {
-        name: "Utilities",
-        path: "/utiilities",
-        subMenu: [
-          {
-            name: "Error 404",
-            path: "/error",
-          },
-          {
-            name: "Login",
-            path: "/login",
-          },
-          {
-            name: "Signup",
-            path: "/signup",
-          },
-          {
-            name: "Reset Password",
-            path: "/reset",
-          },
-        ],
-      },
+       },
+         {
+        name: "RPC",
+        path: "/",
+       },
+   
+         {
+        name: "Buy HVT",
+        path: "/",
+       },
+   
+   
       // ...other items
     ],
     gridCols: 2,
   },
   {
-    name: "Contact",
-    path: "/contact",
+    name: "Buy HVT",
+    path: "/",
   },
+  {
+    name:"Rewards",
+    path:"/"
+  }
 ];
 
 export const LogoTickerItems = [
@@ -272,83 +209,101 @@ export const footerPrimaryPages = [
 // legal
 export const footerUtilitiesPages = [
   {
+    page: "Creator Monetization",
+    path: "/",
+  },
+  {
+    page: "Roadmap",
+    path: "/",
+  },
+  {
+    page: "Collaborations",
+    path: "/",
+  },
+
+];
+
+export const ResourcesPages = [
+  {
     page: "Whitepaper",
-    path: "/signup",
+    path: "/",
   },
   {
     page: "Tokenomics",
-    path: "/login",
+    path: "/",
   },
   {
     page: "Developer Docs / API",
-    path: "/notfound",
+    path: "/",
   },
   {
     page: "FAQs",
-    path: "/reset",
+    path: "/",
   },
 ];
 
-export const footerLegalPages = [
+// Legal pages
+export const LegalPages = [
   {
     page: "Terms of Use",
-    path: "/terms",
+    path: "/",
   },
   {
     page: "Privacy Policy",
-    path: "/privacy",
+    path: "/",
   },
+
   {
     page: "Disclaimer",
-    path: "/disclaimer",
+    path: "/",
   },
-  {
+    {
     page: "Cookie Policy",
-    path: "/cookie",
+    path: "/",
   },
 ];
-
-// Get Involved
-export const footerGetInvolvedPages = [
+// involved pages
+export const involvedPages = [
   {
     page: "Join the Community (Discord, Telegram, X/Twitter)",
-    path: "#",
+    path: "/contact",
   },
   {
     page: "Become a Creator",
-    path: "/Become-a-Creator",
+    path: "/",
   },
 
   {
     page: "Contact Us",
     path: "/contact",
   },
+  
 ];
 
 export const coreValues = [
   {
     icon: CoreValueIcon1,
-    title: "Innovation",
+    title: "User Ownership & Control",
     description:
-      "User Ownership & Control We empower users to fully own and control their content and data without intermediaries or centralized authority",
+      "We empower users to fully own and control their content and data without intermediaries or centralized authority.",
   },
   {
     icon: CoreValueIcon2,
-    title: "Excellence",
+    title: "Transparency & Trust",
     description:
-      "Transparency & Trust Our platform operates on an open, secure blockchain ensuring every interaction and reward to be transparent and verifiable",
+      " Our platform operates on an open, secure blockchain ensuring every interaction and reward to be transparent and verifiable.",
   },
   {
     icon: CoreValueIcon3,
-    title: "Collaboration",
+    title: "Fairness & Reward",
     description:
-      "Fairness & Reward Creators are directly and fairly compensated through our native token, fostering an equitable and sustainable digital economy",
+      " Creators are directly and fairly compensated through our native token, fostering an equitable and sustainable digital economy",
   },
   {
     icon: CoreValueIcon4,
-    title: "Integrity",
+    title: " Innovation & Intelligence",
     description:
-      "Innovation & Intelligence We fuse advanced AI with blockchain technology to deliver smart content discovery, dynamic personalization, and continuous ecosystem evolution.",
+      " We fuse advanced AI with blockchain technology to deliver smart content discovery, dynamic personalization, and continuous ecosystem evolution.",
   },
 ];
 export const teamMembers = [

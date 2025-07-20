@@ -16,9 +16,8 @@ const HeroSection = () => {
 
         <div className="sm:max-w-4xl mx-auto">
           <p className="text-center text-primary font-secondary tracking-tight mt-5 font-medium text-xl md:font-semibold">
-            Explore a next-gen ecosystem that merges artificial intelligence and
-            blockchain technology. Create quality content, connect with others,
-            and earn real rewards — all on a decentralized platform.
+          An innovative ecosystem that combines artificial intelligence (AI) and blockchain technology. We offer users a platform where they can engage in activities like creating quality content, engaging, interacting with others, and earning rewards. 
+
           </p>
         </div>
 

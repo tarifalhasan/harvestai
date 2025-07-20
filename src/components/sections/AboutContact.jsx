@@ -16,7 +16,7 @@ const AboutContact = () => {
             className="order-2 overflow-hidden rounded-[20px] md:order-1"
           >
             <img
-              src={AboutContactImage}
+                      src={"/imgs/tailes/27.png"}
               alt="about-contact-img"
               width="526"
               height="550"
