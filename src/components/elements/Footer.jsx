@@ -1,19 +1,17 @@
-import logo from "../../assets/icons/Logo.png";
-
+import {
+  footerPrimaryPages,
+  footerUtilitiesPages,
+  involvedPages,
+  LegalPages,
+  ResourcesPages,
+} from "../../utils/constants";
 import MaxWidthWrapper from "../shared/MaxWidthWrapper";
-import FooterTop from "./FooterTop";
-import { footerPrimaryPages, involvedPages, LegalPages, ResourcesPages } from "../../utils/constants";
-import { footerUtilitiesPages } from "../../utils/constants";
-
-
-
-
 
 const Footer = () => {
   return (
     <footer className="relative z-[1] -mt-[150px] overflow-hidden rounded-tl-[30px] rounded-tr-[35px] bg-[#f2f8ff] lg:rounded-tl-[50px] lg:rounded-tr-[38px]">
       {/* Footer top */}
-      <FooterTop />
+      {/* <FooterTop /> */}
 
       {/* Footer Main Content */}
       <MaxWidthWrapper>
@@ -23,12 +21,16 @@ const Footer = () => {
             {/* Logo & Description */}
             <div className="flex flex-col gap-y-6">
               <a href="/" className="inline-block">
-
-            <img src={"/icons/logo.png"} alt="Harvest ai" className="md:h-20 w-auto h-12 md:-ml-5 -mt-4"  />
+                <img
+                  src={"/icons/logo.png"}
+                  alt="Harvest ai"
+                  className="md:h-20 w-auto h-12 md:-ml-5 -mt-4"
+                />
               </a>
               <p className="text-lg font-primary">
-             At Harvest AI, we are building a future where every voice is valued, every action is rewarded, and every user owns their digital identity.
-
+                At Harvest AI, we are building a future where every voice is
+                valued, every action is rewarded, and every user owns their
+                digital identity.
               </p>
               {/* <p className="text-lg font-primary">
                 Website: <a href="/">www.example.com</a>
@@ -38,7 +40,7 @@ const Footer = () => {
             {/* Primary Pages */}
             <div className="flex flex-col gap-y-6">
               <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
-                Platform 
+                Platform
               </h4>
               <ul className="flex flex-col gap-y-[10px] capitalize">
                 {footerPrimaryPages.map((item, i) => (
@@ -57,7 +59,7 @@ const Footer = () => {
             {/* Utility Pages */}
             <div className="flex flex-col gap-y-6">
               <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
-                Ecosystem 
+                Ecosystem
               </h4>
               <ul className="flex flex-col gap-y-[10px] capitalize">
                 {footerUtilitiesPages.map((item, i) => (
@@ -73,10 +75,10 @@ const Footer = () => {
               </ul>
             </div>
 
-              {/* Resources   */}
-             <div className="flex flex-col gap-y-6">
+            {/* Resources   */}
+            <div className="flex flex-col gap-y-6">
               <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
-                Resources 
+                Resources
               </h4>
               <ul className="flex flex-col gap-y-[10px] capitalize">
                 {ResourcesPages.map((item, i) => (
@@ -92,12 +94,10 @@ const Footer = () => {
               </ul>
             </div>
 
-
-
-              {/* legal   */}
-             <div className="flex flex-col gap-y-6">
+            {/* legal   */}
+            <div className="flex flex-col gap-y-6">
               <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
-                Legal    
+                Legal
               </h4>
               <ul className="flex flex-col gap-y-[10px] capitalize">
                 {LegalPages.map((item, i) => (
@@ -113,7 +113,7 @@ const Footer = () => {
               </ul>
             </div>
 
-              <div className="flex flex-col gap-y-6">
+            <div className="flex flex-col gap-y-6">
               <h4 className="text-[21px] font-semibold capitalize text-black font-secondary">
                 Get Involved
               </h4>
